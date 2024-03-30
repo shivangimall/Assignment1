@@ -1,0 +1,171 @@
+
+.property-card-container {
+  position: relative;
+  margin: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  
+}
+
+.property-details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width:380px;
+  height:320px;
+  bottom: 32px;
+  left: 22px;
+  right: 0; 
+  background-color: white;
+  box-shadow: 0rem 0.3rem 0.3rem 0rem rgba(0, 0, 0, 0.25);
+  padding: 1.3rem 1.6rem 2.8rem 1.9rem;
+  box-sizing: border-box;
+  margin-bottom: -20%;
+}
+
+.property-image img{
+  width:380px;
+   height:311px;
+}
+
+.property-title {
+    margin-bottom: 0.8rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Libre Caslon Text';
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.192;
+    text-transform: capitalize;
+    color: #2E4374;
+}
+
+.property-description {
+    margin-bottom: 1.2rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Segoe UI', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.192;
+    text-transform: capitalize;
+    color: #1E2858;
+}
+
+.location {
+    overflow-wrap: break-word;
+    font-family: 'Segoe UI', 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 0rem;
+    line-height: 1.192;
+    color: #1E2858;
+}
+
+.map-icon {
+    width: 1rem;
+    height: 1.2rem;
+}
+.property-features{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.property-feature {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.feature-detail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    font-size: 10px;
+}
+
+.feature-name {
+    font-weight: bold;
+    color: #818EAE;
+    ;
+}
+.feature-value{
+  color: #2E4374;
+
+}
+
+.price {
+    margin-bottom: 1.3rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Libre Caslon Text';
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.192;
+    text-transform: capitalize;
+    color: #5B8BC5;
+    margin-top:40px;
+}
+.read-more-button{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.button-icon{
+  border: 1px solid #2E4374;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #2E4374;
+  
+}
+.button-icon > *{
+  padding: 4px;
+}
+
+.button-icon button{
+  outline: none;
+  border: none;
+  background: none;
+}
+/* Add more styles as needed */
+@media screen and (max-width: 576px) {
+  .property-card-container {
+    max-width: 100%; 
+  }
+
+  .property-details {
+    padding: 0.8rem;
+    margin-top: -15px;
+    width: 280px;
+    height:280px;
+  }
+  .property-image img{
+    width: 280px;
+    height:280px;
+  }
+
+  .property-title {
+    font-size: 0.9rem; 
+  }
+
+  .property-description {
+    font-size: 0.7rem;
+  }
+
+  .location {
+    font-size: 0.7rem;
+  }
+
+  .price {
+    font-size: 0.8rem; 
+    margin: 10px;
+  }
+}
